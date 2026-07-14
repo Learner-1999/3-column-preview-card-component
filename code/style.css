@@ -1,0 +1,27 @@
+:root {
+  /* PRIMARY COLORS */
+  --Gold-500: hsl(31, 77%, 52%);
+  --Cyan-800: hsl(184, 100%, 22%);
+  --Green-950: hsl(179, 100%, 13%);
+
+  /* NEUTRAL COLORS */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --Gray-100: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+  /* WEIGHTS */
+  --weight-400: 400;
+  --weight-700: 700;
+
+  /* FAMILY */
+  --Lexend-Deca: "Lexend Deca";
+  --Big-Shoulders: "Big Shoulders";
+
+  /* FONT */
+  --font-size-15px: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
