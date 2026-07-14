@@ -41,9 +41,10 @@ html {
 .section {
   display: grid;
   row-gap: 1.6rem;
-  inline-size: 17rem;
+  inline-size: 19rem;
   padding: 1.6rem;
   padding-block: 2.8rem;
+  padding-inline: 35px;
 }
 
 .section-sedans {
@@ -58,13 +59,9 @@ html {
   border-radius: 0 0.7rem 0.7rem 0;
 }
 
-.icon {
-  padding-top: 1.3rem;
-}
-
 .heading {
   color: var(--Gray-100);
-  font-size: 2.3rem;
+  font-size: clamp(2rem, 5vw, 2.3rem);
   text-transform: uppercase;
   font-family: var(--Big-Shoulders), sans-serif;
   font-weight: var(--weight-700);
@@ -113,7 +110,7 @@ html {
 }
 
 /* MOBILE */
-@media (max-inline-size: 55.3rem) {
+@media (max-width: 55.3rem) {
   .main {
     flex-direction: column;
   }
