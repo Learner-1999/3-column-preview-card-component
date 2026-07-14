@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>3 column preview card component</title>
   </head>
   <body>
     <main class="main">
-      <section class="sedans">
-        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="40">
+      <section class="section section-sedans">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="40"
+          class="icon icon-sedans"
+        >
           <g fill="none" fill-rule="evenodd">
             <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
             <path
@@ -31,10 +42,17 @@
           Chooce a sedan for its affordability and excellent fuel economy. Ideal
           for cruising in the city or on your next road trip
         </p>
-        <button class="btn">Learn More</button>
+        <a href="#" class="btn btn-sedans">
+          <p class="btn-text-sedans">learn more</p>
+        </a>
       </section>
-      <section class="suvs">
-        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="40">
+      <section class="section section-suvs">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="40"
+          class="icon icon-suvs"
+        >
           <g fill="none" fill-rule="evenodd">
             <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
             <path
@@ -52,12 +70,22 @@
             />
           </g>
         </svg>
-        <h2 class="heading"></h2>
-        <p class="paragraph"></p>
-        <button class="btn"></button>
+        <h2 class="heading">suvs</h2>
+        <p class="paragraph">
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures
+        </p>
+        <a href="#" class="btn btn-suv">
+          <p class="btn-text-suvs">learn more</p>
+        </a>
       </section>
-      <section class="luxury">
-        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="40">
+      <section class="section section-luxury">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="40"
+          class="icon icon-luxury"
+        >
           <g fill="none" fill-rule="evenodd">
             <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
             <path
@@ -76,9 +104,14 @@
             />
           </g>
         </svg>
-        <h2 class="heading"></h2>
-        <p class="paragraph"></p>
-        <button class="btn"></button>
+        <h2 class="heading">luxury</h2>
+        <p class="paragraph">
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <a href="#" class="btn btn-luxury">
+          <p class="btn-text-luxury">learn more</p>
+        </a>
       </section>
     </main>
   </body>
