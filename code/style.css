@@ -17,7 +17,7 @@
   --Big-Shoulders: "Big Shoulders";
 
   /* FONT */
-  --font-size-15px: 15px;
+  --font-size-15px: 0.9rem;
 }
 
 * {
@@ -32,43 +32,39 @@ html {
 
 .main {
   display: flex;
-  /* flex-direction: column; */
-  height: 100vh;
+  block-size: 100vh;
   justify-content: center;
   align-items: center;
-  /* gap: 20px; */
-  /* border-radius: 13px; */
 }
 
+/* DESKTOP */
 .section {
   display: grid;
-  /* border: 0.5px solid black; */
-  row-gap: 25px;
-  width: 262px;
-  /* height: 520px; */
-  padding: 25px;
-  padding-bottom: 42px;
+  row-gap: 1.6rem;
+  inline-size: 17rem;
+  padding: 1.6rem;
+  padding-block: 2.8rem;
 }
 
 .section-sedans {
   background-color: var(--Gold-500);
-  border-radius: 13px 0 0 13px;
+  border-radius: 0.7rem 0 0 0.7rem;
 }
 .section-suvs {
   background-color: var(--Cyan-800);
 }
 .section-luxury {
   background-color: var(--Green-950);
-  border-radius: 0 13px 13px 0;
+  border-radius: 0 0.7rem 0.7rem 0;
 }
 
 .icon {
-  padding-top: 20px;
+  padding-top: 1.3rem;
 }
 
 .heading {
   color: var(--Gray-100);
-  font-size: 35px;
+  font-size: 2.3rem;
   text-transform: uppercase;
   font-family: var(--Big-Shoulders), sans-serif;
   font-weight: var(--weight-700);
@@ -76,8 +72,8 @@ html {
 
 .paragraph {
   color: var(--Transparent-white);
-  line-height: 1.5;
-  padding-bottom: 68px;
+  line-height: 1.6;
+  padding-block: 0 4.5rem;
 }
 
 .paragraph,
@@ -90,34 +86,42 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 0.5px solid black; */
-  width: 140px;
-  border-radius: 35px;
+  inline-size: 9.3rem;
+  border-radius: 2.3rem;
   text-transform: capitalize;
-  height: 50px;
+  block-size: 3.3rem;
   background-color: var(--Gray-100);
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .btn-text-sedans {
   color: var(--Gold-500);
 }
+
 .btn-text-suvs {
   color: var(--Cyan-800);
 }
+
 .btn-text-luxury {
   color: var(--Green-950);
 }
 
-@media (max-width: 830px) {
+.btn:hover {
+  background-color: hsla(0, 0%, 100%, 0.75);
+  color: black;
+}
+
+/* MOBILE */
+@media (max-inline-size: 55.3rem) {
   .main {
     flex-direction: column;
   }
 
   .section {
-    row-gap: 15px;
-    width: 281px;
-    padding-bottom: 25px;
+    row-gap: 1rem;
+    inline-size: 18.7rem;
+    padding-block: 1.6rem;
   }
 
   .icon {
@@ -125,14 +129,14 @@ html {
   }
 
   .paragraph {
-    padding-bottom: 0;
+    padding-block: 0;
   }
 
   .section-sedans {
-    border-radius: 13px 13px 0 0;
+    border-radius: 0.7rem 0.7rem 0 0;
   }
 
   .section-luxury {
-    border-radius: 0 0 13px 13px;
+    border-radius: 0 0 0.7rem 0.7rem;
   }
 }
