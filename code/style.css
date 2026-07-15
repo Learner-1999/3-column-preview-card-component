@@ -105,7 +105,7 @@ html {
 }
 
 .btn:hover {
-  background-color: hsla(0, 0%, 100%, 0.75);
+  background-color: var(--Transparent-white);
   color: black;
 }
 
